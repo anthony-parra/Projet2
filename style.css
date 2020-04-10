@@ -1,0 +1,301 @@
+/* ---------------------------- MAIN -------------------------------*/
+
+body {
+    margin: auto;
+    font-family: 'sinkin_sans400_regular', Arial, "Comic sans MS", "Arial Black";
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('fonts/SinkinSans-400Regular-webfont.eot');
+    src: url('fonts/SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/SinkinSans-400Regular-webfont.woff2') format('woff2'), url('fonts/SinkinSans-400Regular-webfont.woff') format('woff'), url('fonts/SinkinSans-400Regular-webfont.ttf') format('truetype'), url('fonts/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------HEADER-----------------------------*/
+
+header {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.en_tete {
+    display: flex;
+    flex-direction: row;
+}
+
+.username {
+    color: #FDC624;
+    font-size: 2em;
+}
+
+.name {
+    font-size: 2em;
+}
+
+.work {
+    font-size: 1em;
+}
+
+.underline {
+    border-bottom: 4px solid #FDC624;
+}
+
+
+/* --------------------  COLONNE DE GAUCHE ----------------------  */
+
+.colonne_gauche {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    word-wrap: break-word;
+    background-color: #FDC624;
+}
+
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.contact_inside {
+    padding: 0 0 0 3em;
+}
+
+.a_propos_inside {
+    text-align: justify;
+    padding: 0 3em 0 3em;
+}
+
+.loisirs {
+    margin-top: auto;
+    padding-bottom: 3em;
+}
+
+.font_loisirs {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* ------------------------------ COLONNE DE DROITE -------------------------------- */
+
+.colonne_droite {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+h2 {
+    background-color: black;
+    color: #FDC624;
+    text-align: center;
+    font-family: "sinkin_sans400_regular";
+}
+
+.h2_droite {
+    color: black;
+    background-color: white;
+    border-bottom: 4px solid #FDC624;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-family: "sinkin_sans400_regular";
+}
+
+.font {
+    color: #FDC624;
+    margin-right: 2em;
+}
+
+
+/*-----------------------------FORMATION ET EXPERIENCE PRO-----------------------------*/
+
+.bloc_formation {
+    display: flex;
+    flex-direction: column;
+}
+
+.date_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    display: flex;
+    flex: 1;
+    padding-top: 1em;
+    font-family: "sinkin_sans400_regular";
+    font-weight: bold;
+}
+
+.circle {
+    color: #FDC624;
+    padding-right: 20px;
+}
+
+.info {
+    flex: 2;
+}
+
+
+/*-----------------------------------RECOMMANDATION-------------------------------*/
+
+.recommandation {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc_recommandation {
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc_1 {
+    flex: 2;
+}
+
+.bloc_2 {
+    flex: 2;
+}
+
+
+/* ---------------------------- RESPONSIVE ---------------------------- */
+
+@media screen and (max-width: 840px) {
+    .date_info {
+        display: flex;
+        flex-direction: column;
+    }
+    .bloc_recommandation {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .colonne_gauche {
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        word-wrap: break-word;
+        background-color: #FDC624;
+    }
+    .picture {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+    }
+    .contact_inside {
+        text-align: center;
+        padding-left: 0;
+    }
+    .a_propos_inside {
+        text-align: justify;
+        padding: 0 3em 0 3em;
+    }
+    .loisirs {
+        margin-top: auto;
+        padding-bottom: 1em;
+    }
+    .font_loisirs {
+        display: flex;
+        justify-content: space-around;
+    }
+    /*---------------------HEADER-----------------------------*/
+    header {
+        text-align: center;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .en_tete {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .username {
+        color: #FDC624;
+        font-size: 1em;
+    }
+    .name {
+        font-size: 1em;
+    }
+    .work {
+        font-size: 0.5em;
+    }
+    .underline {
+        border-bottom: 4px solid #FDC624;
+    }
+    /* ------------------------------ COLONNE DE DROITE -------------------------------- */
+    .colonne_droite {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+    h2 {
+        background-color: black;
+        color: #FDC624;
+        text-align: center;
+        font-size: 1em;
+        font-family: "sinkin_sans400_regular";
+    }
+    .h2_droite {
+        color: black;
+        background-color: white;
+        border-bottom: 4px solid #FDC624;
+        text-align: left;
+        padding-bottom: 0.5em;
+    }
+    h3 {
+        font-family: "sinkin_sans400_regular";
+    }
+    .font {
+        color: #FDC624;
+        margin-right: 2em;
+    }
+    /*-----------------------------FORMATION ET EXPERIENCE PRO-----------------------------*/
+    .bloc_formation {
+        display: flex;
+        flex-direction: column;
+    }
+    .date_info {
+        display: flex;
+        flex-direction: column;
+    }
+    .date {
+        display: flex;
+        font-family: "sinkin_sans400_regular";
+        font-weight: bold;
+    }
+    .circle {
+        color: #FDC624;
+        flex: 0;
+    }
+    .info {
+        text-align: left;
+    }
+    /*-----------------------------------RECOMMANDATION-------------------------------*/
+    .recommandation {
+        display: none;
+    }
+}
