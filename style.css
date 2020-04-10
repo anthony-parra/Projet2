@@ -67,6 +67,12 @@ header {
     padding-top: 30px;
 }
 
+img {
+    padding: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
 .contact_inside {
     padding: 0 0 0 3em;
 }
@@ -78,12 +84,16 @@ header {
 
 .loisirs {
     margin-top: auto;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 .font_loisirs {
     display: flex;
     justify-content: space-around;
+}
+
+.fa-stack {
+    font-size: x-large;
 }
 
 
@@ -162,6 +172,7 @@ h3 {
 .bloc_recommandation {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1em;
 }
 
 .bloc_1 {
