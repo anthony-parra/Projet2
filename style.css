@@ -25,6 +25,11 @@
     }
     /*---------------------HEADER-----------------------------*/
     
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .username {
         color: #FDC624;
         font-size: 2em;
@@ -93,8 +98,6 @@
         margin-right: 3em;
         margin-left: 3em;
     }
-    
-    h1 {}
     
     h2 {
         background-color: black;
