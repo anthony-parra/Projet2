@@ -51,7 +51,7 @@
     .colonne_gauche {
         display: flex;
         flex-direction: column;
-        flex: 1;
+        width: 33%;
         word-wrap: break-word;
         background-color: #FDC624;
     }
@@ -191,6 +191,9 @@
     }
     
     @media screen and (max-width: 600px) {
+        .colonne_gauche {
+            width: 100%;
+        }
         .container {
             display: flex;
             flex-direction: column;
